@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function Index() {
       <h1 className="text-3xl font-bold underline">
       Hello world!
     </h1>
+    <button className='bg-blue-400 text-xl pt-3 pb-3 pl-2 pr-2 rounded-md'><Link href="/products">Products</Link></button>
       {/* <Home /> */}
       </main>
     </>
